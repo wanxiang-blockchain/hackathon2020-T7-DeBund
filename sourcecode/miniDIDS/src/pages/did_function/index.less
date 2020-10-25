@@ -1,0 +1,158 @@
+page {
+  background-color: #e7ebed;
+}
+.index {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  position: relative;
+}
+
+.topBox{
+  width: 750px;
+  height: 450px;
+  position: relative;
+  // background: linear-gradient(135deg, rgb(100, 227, 223) 0%, rgb(100, 187, 232) 22%, rgb(100, 115, 229) 75%, rgb(116, 100, 232) 100%);
+  background: linear-gradient(135deg, rgb(148, 151, 151) 0%, rgb(99, 99, 99) 25%,rgb(148, 151, 151) 50%, rgb(99, 99, 99) 75%, rgb(148, 151, 151) 100%);
+  .searchBox {
+    position: absolute;
+    top: 170px;
+    width: 650px;
+    height: 70px;
+    margin: 0 50px;
+    background: rgba(255, 255, 255,0.1);
+    .searchImg {
+      width: 50px;
+      height: 50px;
+      margin: 10px 0;
+    }
+  }
+  .btnLine {
+    width: 650px;
+    padding: 0 50px;
+    position: absolute;
+    top: 280px;
+    display: flex;
+    justify-content: space-around;
+    .imgBox {
+      font-size: 30px;
+      color: white;
+      .imgBtn {
+        width:64px;
+        height: 64px;
+      }
+    }
+  }
+}
+
+.mainBox {
+  width: 750px;
+  margin: 50px 0;
+  .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .menuButton {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 30px;
+    .button {
+      padding: 10px 15px;
+      margin-right: 20px;
+      color: white;
+      font-size: 26px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, rgb(148, 151, 151) 0%, rgb(99, 99, 99) 25%,rgb(148, 151, 151) 50%, rgb(99, 99, 99) 75%, rgb(148, 151, 151) 100%);
+    }
+  }
+  .cardList {
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    margin-top: 20px;
+    .cardItem {
+      width: 350px;
+      height: 250px;
+      background: linear-gradient(135deg, rgb(148, 151, 151) 0%, rgb(99, 99, 99) 25%,rgb(148, 151, 151) 50%, rgb(99, 99, 99) 75%, rgb(148, 151, 151) 100%);
+      margin: 0 20px 0 30px;
+      overflow: hidden;
+      .cardName {
+        text-align: left;
+        margin-top: 180px;
+        margin-left: 180px;
+        font-size: 30px;
+        color: white;
+      }
+    }
+    .cardLast {
+      width: 30px;
+      background-color: transparent;
+    }
+    .cardItem:nth-child(3) {
+      margin-right: 0px;
+    }
+  }
+  .cardList::-webkit-scrollbar {
+    background-color: transparent;
+  }
+}
+
+.tripBox {
+  width: 750px;
+  overflow: hidden;
+  .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .tripList {
+    margin: 0 30px;
+    // background: white;
+    .tripItem {
+      display: flex;
+      justify-content: flex-start;
+      padding:20px 0;
+      border-bottom: 1px solid white;
+      text-align: left;
+      .infoTime, .infoPlace {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .infoTime {
+        margin-right: 40px;
+      }
+      .time1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+      }
+      .time {
+        font-size: 30px;
+        color:  #afb1b3;
+        padding-top: 10px;
+      }
+      .place1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+      }
+      .place {
+        font-size: 30px;
+        color:  #afb1b3;
+        padding-top: 10px;
+      }
+    }
+  }
+}

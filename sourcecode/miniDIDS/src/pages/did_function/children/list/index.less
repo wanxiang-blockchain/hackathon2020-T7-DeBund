@@ -1,0 +1,61 @@
+page {
+  // background-color: #e7ebed;
+}
+.index {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  position: relative;
+}
+.companyList {
+  margin: 0 30px;
+  .companyItem {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e6e6e6;
+    padding:20px 0;
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      .img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+      }
+    }
+    .bundText {
+      width: 470px;
+      margin-left: 20px;
+      text-align: left;
+      position: relative;
+      .name {
+        font-size: 35px;
+        margin-bottom: 20px;
+        color: black;
+      }
+      .place {
+        font-size: 25px;
+        color: #7e7e7e;
+      }
+      .toBooking {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        .text1 {
+          font-size: 30px;
+          color: black;
+        }
+        .arrowStyle {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
